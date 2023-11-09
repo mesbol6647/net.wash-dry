@@ -1,0 +1,278 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  /*? CSS Variables */
+  :root {
+    --blue: #2323ff;
+    --blue-light: #4ac2f2;
+    --blue-dark: rgb(15, 3, 63);
+    --gray-light: #f5f5f5;
+    --gray-medium: #bdbdbd;
+    --fume: #4e5150;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--gray-light);
+    background-color: var(--blue-light);
+  }
+  /*? Global Icons */
+  i {
+    color: var(--blue);
+    padding: 0.5rem;
+    cursor: pointer;
+  }
+  i:hover {
+    color: white;
+    border-radius: 50%;
+    background-color: var(--blue);
+  }
+  
+  /** Header */
+  header {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 1rem;
+    background-color: white;
+    color: var(--orange-dark);
+    border-bottom: 1px solid var(--gray-medium);
+    text-align: center;
+  }
+  
+  /** NAV */
+  nav {
+    padding: 0 1rem;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* text-align: center; */
+  }
+  nav .my-cart {
+    font-size: 22px;
+    font-weight: 600;
+    padding: 1rem;
+  }
+  nav .my-cart span {
+    font-weight: 100;
+    color: var(--gray-medium);
+  }
+  nav .delete-div {
+    color: var(--blue);
+    font-size: 14px;
+  }
+  
+  /** ------- MAIN --------- */
+  main {
+    display: flex;
+    max-width: 1200px;
+    margin: auto;
+    padding: 1rem;
+    gap: 1rem 4rem;
+    background-color:var(--blue-dark)
+  }
+  
+  /*? Product List section */
+  main .product-list {
+    flex: 4;
+    border-radius: 10px;
+    background-color: white;
+  }
+  main .product-list .store {
+    padding: 1.3rem 1rem;
+    font-size: 25px;
+    line-height: 20px;
+    border-bottom: 2px solid var(--gray-light);
+    text-align: center;
+  }
+  
+  main .product-list .no-product {
+    text-align: center;
+    padding: 1rem;
+    color: var(--blue-dark);
+    font-size: 20px;
+  }
+  main .product {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+    border-bottom: 2px solid var(--gray-light);
+    background-color:var(--gray-light);
+    box-shadow: 0px 0px 30px 0px rgba(3, 23, 240, 0.896);
+  }
+  
+  main .product img {
+    width: 120px;
+    height: 120px;
+    border-radius: 5px;
+    border: 5px solid var(--blue-dark);
+  }
+  
+  main .product-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    gap: 1rem;
+  }
+  
+  main .product-info h2 {
+    font-size: 20px;
+    color: red;
+  }
+  main .product-info .metrekare {
+    font-size: 16px;
+    color: rgb(22, 7, 150);
+  }
+  
+  main .product-prices strong {
+    color: crimson;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  
+  main .product-prices .line-through {
+    text-decoration: line-through;
+    font-size: 12px;
+  }
+ 
+  .dollar::after {
+    content: " ₺";
+  }
+  .dollar::before {
+    content:  "";
+  }
+  
+  main .buttons-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+  }
+  
+  main .buttons-div .plus-minus {
+    border: 1px solid var(--gray-light);
+    border-radius: 50px;
+    display: inline-block;
+  }
+  
+  main .buttons-div i {
+    margin: 0.5rem;
+  }
+  main .buttons-div .dollar {
+    font-weight: 600;
+  }
+
+ 
+  /*? ---- Product List section --- */
+  .uygulama{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 3rem;
+  }
+  main .servis-sozlesmesi h4{
+ color: rgb(233, 10, 10);
+ font-size: 20px;
+ padding-bottom: 20px;
+  }
+
+  main .price-table {
+    padding: 2rem;
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid var(--gray-medium);
+    flex: 1;
+    text-align: center;
+    min-width: 300px;
+    max-height: 300px;
+   
+  }
+
+  main .servis-sozlesmesi{
+    padding: 1rem;
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid var(--gray-medium);
+    flex: 1;
+    text-align: justify;
+    max-width: 300px;
+    max-height: 110vh;
+    
+
+  }
+
+
+  main .price-table .total-prices {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  main .price-table .total-prices .finish-btn {
+    background-color: var(--blue-dark);
+    border: none;
+    border-radius: 1rem;
+    padding: 0.5rem 1rem;
+    color: white;
+    cursor: pointer;
+  }
+  
+  main .total-info {
+    margin-top: 1rem;
+  }
+  
+  main .price-table h4 {
+    color: var(--blue-dark);
+  }
+  
+  main .total-info .text-div {
+    display: flex;
+    justify-content: space-between;
+    color: var(--fume);
+  }
+  
+  
+  /*! ------ RESPONSIVE ------- */
+  
+  @media only screen and (max-width: 800px) {
+    main {
+      flex-direction: column;
+    }
+    main .price-table {
+      flex: 1;
+    }
+    main .price-table .total-prices {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+  
+  @media only screen and (max-width: 500px) {
+    main .price-table .total-prices {
+      flex-direction: column;
+    }
+    main .buttons-div {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    main .buttons-div i {
+      margin: 0.2rem;
+    }
+    main .buttons-div .dollar {
+      margin-top: 1rem;
+      font-size: 20px;
+    }
+  }
+  
+  @media only screen and (max-width: 500px) {
+    main .product img {
+      width: 100px;
+      height: 100px;
+    }
+    main .buttons-div i {
+      margin: 0.1rem;
+    }
+  }

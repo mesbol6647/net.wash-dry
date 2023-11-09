@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.resim-container {
+    text-align: center;
+    position: relative;
+}
+
+.resim-container img {
+    display: block; 
+     margin: 0 auto; 
+}
+
+.resim-container h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    color: white; 
+    font-size: 60px;
+    font-weight: 900;
+}
+.resim-container h2 {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  color: white; 
+  font-size: 30px;
+  font-weight: 500;
+}
+
+
+ img {
+    width: 900px;
+    height: 100vh; 
+  }
+
+
+.butonlar {
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+   
+   
+}
+
+.butonlar button {
+    margin: 0 30px;
+    padding: 20px;
+    border-radius: 20px; 
+    background-color: orangered;
+    color: white;
+    font-weight: 900;
+    cursor: pointer;
+    box-shadow: 10px 10px 10px orangered;
+}
+
+
+@media only screen and (max-width: 800px) {
+    .resim-container h1{
+        font-size: 60px;
+       }
+       .resim-container h2 {
+        font-size: 40px;
+       }
+    
+        body .resim-container img {
+          width: 800px;
+          height: 100vh;
+        }
+        body .butonlar button {
+          margin: 0.6rem;
+          padding: 20px;
+        }
+      }
+  
+  
+  @media only screen and (max-width: 500px) {
+   
+    .resim-container h1 {
+        font-size: 40px;
+       }
+       .resim-container h2 {
+        font-size: 20px;
+       }
+    
+        body .resim-container img {
+          width: 375px;
+          height: 100vh;
+        }
+        body .butonlar button {
+          margin: 0.6rem;
+          padding: 10px;
+        }
+      }
+   
+  
+  @media only screen and (max-width: 375px) {
+
+   .resim-container h1 {
+    font-size: 40px;
+   }
+   .resim-container h2 {
+    font-size: 20px;
+   }
+
+    body .resim-container img {
+      width: 375px;
+      height: 100vh;
+    }
+    body .butonlar button {
+      margin: 0.6rem;
+      padding: 10px;
+    }
+  }

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NetWash</title>
+    <link rel="stylesheet" href="net.css">
+</head>
+<body>
+
+    <div class="resim-container">
+        <img src="netwash.jpg" alt="">
+        <h1 class="net">NetWash&Dry</h1>
+        <h2>Hemen Tıklayın <br> Sipariş Verin</h2>
+        <div class="butonlar" >
+            <button id="buton1">HALI YIKAMA</button>
+            <button id="buton2">KURU TEMİZLEME</button>
+       </div>        
+    </div>
+
+    <script>
+        let buton1 =document.getElementById("buton1");
+        buton1.addEventListener("click",function(){
+            window.location.href ="wash.html";
+        });
+    </script>
+     <script>
+        let buton2 =document.getElementById("buton2");
+        buton2.addEventListener("click",function(){
+            window.location.href ="dry.html";
+        });
+    </script>
+</body>
+</html>
