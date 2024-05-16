@@ -35,8 +35,8 @@ Click the + or - buttons to increase or decrease the quantity of products.
 Click the trash can icon to remove a product from the cart.
 Click the "Clear List" button to empty the entire cart.
 Adjust product quantities to see the updated total amount, shipping fee, and tax rate <br/><br/>
-![Project-Gif](https://github.com/mesbol6647/net.wash-dry/blob/main/img/project.gif) <br/>
-![Project-Gif](https://github.com/mesbol6647/net.wash-dry/blob/main/img/netwashmobile.gif) <br/>
+![Project-Gif](https://github.com/mesbol6647/net.wash-dry/blob/main/img/project.gif) 
+**<p align="center">![Project-Gif](https://github.com/mesbol6647/net.wash-dry/blob/main/img/netwashmobile.gif)</p>**  <br/>
 [Project-Link](https://main--netwashdry.netlify.app/dry.html)
 
 Clone the project to your local machine:
