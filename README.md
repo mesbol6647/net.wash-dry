@@ -1,4 +1,4 @@
-## Net-Wash&Dry
+# Net-Wash&Dry
 
 # Features
 Increase and decrease product quantities
